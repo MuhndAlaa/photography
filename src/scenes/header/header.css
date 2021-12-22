@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+body {
+  margin: 0px 0px;
+  font-family: 'Roboto', "arial", monospace;
+}
+
+.wrapper{
+  position: relative;
+}
+
+.headline {
+  position: absolute;
+  z-index: 3;
+  color: #fff;
+  width: 100%;
+  top: 42%;
+}
+
+.headline h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.slides .buttons{
+  position: absolute;
+  top: 48%; left: 0;
+  z-index: 10;
+}
+
+.slides .arrow{
+  display: block;
+  background-color: transparent;
+  color: #fff;
+  font-size: 2rem;
+  border: 3px solid #fff;
+  border-radius: 0 0 10px 0;
+  padding: 0.5rem;
+}
+
+.slides .arrow:first-child{
+  border-radius: 0 10px 0 0;
+}
+
+.slides .arrow:hover{
+  border: 3px solid steelblue;
+  color: steelblue;
+  font-size: 2.2rem;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
+.slides {
+  position: relative;
+  height: 100vh;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.slide {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 1s;
+  background-size: cover;
+}
+
+.showing {
+  opacity: 1;
+  z-index: 2;
+}
+
+.slide1 {
+  background-image: url("https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?dpr=1.25&auto=compress,format&crop=entropy&fit=crop&w=1199&h=899&q=80&cs=tinysrgb")
+}
+
+.slide2 {
+  background-image: url("https://images.unsplash.com/photo-1475439242971-afb6fcc1ba22?dpr=1.25&auto=compress,format&crop=entropy&fit=crop&w=1199&h=813&q=80&cs=tinysrgb")
+}
+
+.slide3 {
+  background-image: url("https://images.unsplash.com/photo-1462663608395-404cb6246eaf?dpr=1.25&auto=compress,format&crop=entropy&fit=crop&w=1199&h=898&q=80&cs=tinysrgb")
+}
